@@ -1,0 +1,60 @@
+    <%- include ('header') -%>
+    <div class="ui comments">
+
+      
+        <h1 class="ui header">3CX Extension provisionning </h1>
+
+
+      <div class="ui divider"></div>
+
+      <form action="/api" method="post" class="ui form">
+        <div class="field">
+          <label>Instance</label>
+          <input name="instance">
+        </div>
+        <div class="field">
+          <label>Username</label>
+          <input name="username" >
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input name="password" type="password" >
+        </div>
+        <div class="field">
+          <label>Caller ID</label>
+          <input name="callerid" >
+        </div>
+        <div class="field">
+            <label>Source Extension</label>
+            <input name="sourceext" type='number' max={5} />
+
+        </div>
+        <div class="field">
+          <label>Starting Extension</label>
+          <input name="startext" type='number' max={5} />
+
+      </div>
+        <div class="field">
+          <label>Amount of extensions</label>
+          <input name="amount" type='number' max={5} />
+
+      </div>
+        <button class="ui button" type="submit">Add Domain</button>
+      </form>
+      
+    </div>
+
+
+<script>
+  $('#example5').calendar({
+    type: 'time'
+  });
+
+</script>
+
+
+
+
+
+
+    <%- include ('footer') -%> 
